@@ -1,0 +1,58 @@
+00:18:50 main: main() trace group 3 deactivated
+00:18:50 main: main() trace group 6 deactivated
+00:18:50 main: main() trace group 8 deactivated
+00:18:50 main: main() trace group 18 deactivated
+00:18:50 main: main() simulator started
+00:19:09    main: DeliveryInfoSender.start() entered
+00:19:09    DlvrInfoSender-1: DeliveryInfoSender.run() entered
+00:19:09    main: DeliveryInfoSender.start() exited
+00:19:09    main: main() going to parse from input stream
+00:19:09    main: main() got comment line # This is an example of user definition file used to authenticate bounding ESME.
+00:19:09    main: main() got comment line # User consists from attributes, each attribute is on one line,
+00:19:09    main: main() got comment line # each attribute has key and value; users are delimited by one or more
+00:19:09    main: main() got comment line # consecutive blank lines - next user is started by the next attribute after
+00:19:09    main: main() got comment line # first occurence of blank line.
+00:19:09    main: main() got comment line # Comment line can appear anywhere and it's ignored => it can't delimit
+00:19:09    main: main() got comment line # two users.
+00:19:09    main: main() got comment line # Format of attribute is <name>"="<value>
+00:19:09    main: main() got comment line #
+00:19:09    main: main() got comment line # The name and password attributes are compulsory for each user definition
+00:19:09    main: main() got comment line # as they are compared to the system_id and password parameters
+00:19:09    main: main() got comment line # in the incoming bound PDU.
+00:19:09    main: main() got comment line #
+00:19:09    main: main() got comment line # Note that timeout and bound attributes below are just exampples
+00:19:09    main: main() got comment line # of additional attributes and aren't really used by the simulator :-)
+00:19:09    main: main() got comment line # (future expansion?)
+00:19:09    main: main() got comment line # Also note that whitespaces aren't removed from neither attribute name
+00:19:09    main: main() got comment line # and it's value, i.e. "name=peter" and "name= peter" define two different users,
+00:19:09    main: main() got comment line # "peter" and " peter".
+00:19:09    main: main() got empty line
+00:19:09    main: main() got comment line # Pavel can bound for unlimited time as any type
+00:19:09    main: main() going to parse attribute name=ecomail
+00:19:09    main: main() going to parse attribute password=ecomail
+00:19:09    main: main() going to parse attribute timeout=5
+00:19:09    main: main() got empty line
+00:19:09    main: main() finished record, adding to table
+00:19:09    main: main() got comment line # Jorge has time limited to 10, then the connection is dropped
+00:19:09    main: main() got comment line # if enquire is unsuccessfull
+00:19:09    main: main() got comment line # Also, Jorge can connect only as triansmitter or receiver, he can't
+00:19:09    main: main() got comment line # connect as transciever
+00:19:09    main: main() going to parse attribute name=jorge
+00:19:09    main: main() going to parse attribute password=prtgljrg
+00:19:09    main: main() got comment line # And this timeout is in minutes, bad luck, jorge %^)
+00:19:09    main: main() going to parse attribute timout=5
+00:19:09    main: main() going to parse attribute bound=t,r
+00:19:09    main: main() got comment line # And another users
+00:19:09    main: main() going to parse attribute name=hugo
+00:19:09    main: main() going to parse attribute password=ggoohu
+00:19:09    main: main() got comment line # that's all folks
+00:19:09    main: main() going to parse attribute name=DAMIEN
+00:19:09    main: main() going to parse attribute password=neimad
+00:19:09    main: main() finished record, adding to table
+00:19:09    main: main() going to start SMSCListener on port 5016
+00:19:09       main: TCPIPConnection.open entered
+00:19:09       main: TCPIPConnection.open listening tcp/ip on port 5016 (7)
+00:19:09       main: TCPIPConnection.open exited
+00:19:09    main: main() starting listener in separate thread.
+00:19:09    main: main() listener started in separate thread.
+00:19:09    Thread-3: SMSCListener.run of SMSCListener on port 5016 entered

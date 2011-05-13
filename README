@@ -1,0 +1,9 @@
+== Testing/Sample Code
+
+Logica provides an SMPP simulator that you can download from opensmpp.logica.com. You can also sign up for a demo SMPP account at one of the many bulk-SMS providers out there.
+
+For a quick test, download smscsim.jar and smpp.jar from the Logica site, and start the simulator by typing:
+
+	java -cp smscsim.jar:smpp.jar com.logica.smscsim.Simulator
+	java -cp smpptest.java com.logica.smpp.SMPPTest.java
+	
